@@ -1,0 +1,12 @@
+{
+  "name": "generator-5minds-angular2",
+  "version": "0.1.0",
+  "description": "A Generator to generate angular2 modules in the 5minds structure",
+  "files": [
+    "generators"
+  ],
+  "keywords": ["yeoman-generator, angular2, 5minds"],
+  "dependencies": {
+    "yeoman-generator": "^1.0.0"
+  }
+}
