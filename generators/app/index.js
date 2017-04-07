@@ -24,12 +24,25 @@ module.exports = class extends Generator {
     return this.prompt([{
       type: 'input',
       name: 'moduleName',
-      message: 'Modulname'
+      message: 'Type Modulname in Camelcase'
     }]).then((answer) => {
-      const moduleFileName = answer.moduleName.toLowerCase();
+      const moduleFileName = this._generateFileNameForModule(answer.moduleName);
       const moduleName = answer.moduleName.replace(/-/g, '');
       this._createModule(moduleName, moduleFileName);
     });
+  }
+
+  _generateFileNameForModule(answer) {
+    for(let i = 0; i < answer.length - 1; i++) {
+      if(answer[i+1] == answer[i+1].toUpperCase()) {
+        if(i != 0){
+          answer = answer.substring(0, i+1) + answer[i+1].toLowerCase() + answer.substring(i+2, answer.length);
+          answer = answer.substring(0, i+1) + '-' + answer.substring(i+1, answer.length);
+        }
+      }
+    }
+    answer = answer.toLowerCase();
+    return answer;
   }
 
   _createModule(moduleName, moduleFileName) {
