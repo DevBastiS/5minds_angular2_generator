@@ -19,3 +19,5 @@ import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
     <%=moduleName%>Repository,
   ],
 })
+
+export class <%=moduleName%> {}
