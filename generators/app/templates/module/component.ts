@@ -12,7 +12,7 @@ export class <%=moduleName%>Component implements OnInit {
 
   constructor(private <%=moduleCompName%>Service: <%=moduleName%>Service) { }
 
-  @NgOnInit(): void {
+  public NgOnInit(): void {
     
   }
 }
