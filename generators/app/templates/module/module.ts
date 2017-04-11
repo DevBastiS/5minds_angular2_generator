@@ -1,4 +1,5 @@
 import {CommonModule} from '@angular/common';
+import {NgModule} from '@angular/core';
 
 import {<%=moduleName%>RoutingModule} from './<%=moduleFileName%>-routing.module';
 
