@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-import {<%=moduleName%>Service} from './services/<%=moduleName%>.service';
+import {<%=moduleName%>Service} from './services/<%=moduleFileName%>.service';
 
 @Component({
   selector: '<%=moduleFileName%>',
