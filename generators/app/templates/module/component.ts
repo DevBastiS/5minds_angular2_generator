@@ -8,9 +8,11 @@ import {<%=moduleName%>Service} from './services/<%=moduleFileName%>.service';
   styleUrls: ['./<%=moduleFileName%>.component.css'],
 })
 
-export class <%=moduleName%>Component {
+export class <%=moduleName%>Component implements OnInit {
 
   constructor(private <%=moduleCompName%>Service: <%=moduleName%>Service) { }
 
-
+  @NgOnInit(): void {
+    
+  }
 }
