@@ -7,7 +7,7 @@ import {environment} from 'environment';
 @Injectable()
 export class <%=moduleName%>Repository {
 
-  constructor(private httP: Http) { }
+  constructor(private http: Http) { }
 
   
 }
