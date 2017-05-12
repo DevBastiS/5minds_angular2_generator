@@ -4,7 +4,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
 
 const routes: Routes = [
-  {path: '<%=moduleName%>', component: <%=moduleName%>Component},
+  {path: '', component: <%=moduleName%>Component}, //enter path here
 ];
 
 @NgModule({
@@ -12,8 +12,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
   ],
   exports: [
-    RouterModule
+    RouterModule,
   ],
 })
 
-export class <%=moduleName%>RoutingModule { }
+export class <%=moduleName%>RoutingModule {}

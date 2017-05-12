@@ -1,8 +1,8 @@
 import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
-import {<%=moduleName%>RoutingModule} from './<%=moduleFileName%>-routing.module';
 import {<%=moduleName%>MockRepository} from './repositories/<%=moduleFileName%>.repository.mock';
 import {<%=moduleName%>DefaultService} from './services/<%=moduleFileName%>.service.default';
+import {<%=moduleName%>RoutingModule} from './<%=moduleFileName%>-routing.module';
 import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
 
 @NgModule({
@@ -25,4 +25,4 @@ import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
   ],
 })
 
-export class <%=moduleName%>Module {}
+export class <%=moduleName%>Module { }
