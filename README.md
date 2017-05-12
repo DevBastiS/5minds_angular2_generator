@@ -90,9 +90,20 @@ $ yo 5minds-angular2 module
 ```
 Now you should see the instruction: 
 
-**Type Modulname in Pascalcase**
+**? Type Modulname in Pascalcase** 
 
-Type in the Name for your module (e.g. "test"). The generator will create the following 
+Type in the Name for your module (e.g. "test").
+
+**? Generate Service & Repo Layer? [y/n]** 
+
+Answering with yes will generate a Service & Repo Layer.
+
+**? Generate Routing? [y/n]** 
+
+Answering with yes will generate a Routing.
+
+
+The generator will create the following 
 folders and files for you:
 
 ```sh
@@ -108,3 +119,9 @@ folders and files for you:
 ----test.repository.mock.ts
 ----test.repository.interface.ts
 ```
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> release/1.1.0
