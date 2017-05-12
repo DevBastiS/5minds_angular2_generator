@@ -74,12 +74,12 @@ module.exports = class extends Generator {
     );
     this.fs.copyTpl(
       this.templatePath('module/service.ts'),
-      this.destinationPath(`src/app/modules/${moduleFileName}/services/${moduleFileName}.service.ts`),
+      this.destinationPath(`src/app/modules/${moduleFileName}/services/${moduleFileName}.service.default.ts`),
       {moduleName: moduleName, moduleFileName: moduleFileName, moduleCompName: moduleCompName}
     );
     this.fs.copyTpl(
       this.templatePath('module/repository.ts'),
-      this.destinationPath(`src/app/modules/${moduleFileName}/repositories/${moduleFileName}.repository.ts`),
+      this.destinationPath(`src/app/modules/${moduleFileName}/repositories/${moduleFileName}.repository.mock.ts`),
       {moduleName: moduleName, moduleFileName: moduleFileName}
     );
     this.log('WARNING! Generating it does not replace checking it!')
