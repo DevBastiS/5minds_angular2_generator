@@ -1,7 +1,7 @@
 import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
-import {<%=moduleName%>MockRepository} from './repositories/<%=moduleFileName%>.repository.mock';
-import {<%=moduleName%>DefaultService} from './services/<%=moduleFileName%>.service.default';
+import {<%=moduleName%>MockRepository} from './repositories';
+import {<%=moduleName%>DefaultService} from './services';
 import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
 
 @NgModule({
