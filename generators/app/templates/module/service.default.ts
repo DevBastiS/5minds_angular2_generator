@@ -1,7 +1,7 @@
 import {Injectable, Inject} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import {I<%=moduleName%>Service} from './<%=moduleFileName%>.service.interface'
-import {I<%=moduleName%>Repository} from './../repositories/<%=moduleFileName%>.interface.repository';
+import {I<%=moduleName%>Repository} from './../repositories/<%=moduleFileName%>.repository.interface';
 
 @Injectable()
 export class <%=moduleName%>DefaultService implements I<%=moduleName%>Service {
