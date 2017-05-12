@@ -23,7 +23,7 @@ module.exports = class extends Generator {
     return this.prompt([{
       type: 'input',
       name: 'moduleName',
-      message: 'Type Modulname in Camelcase'
+      message: 'Type Modulname in Pascalcase'
     }]).then((answer) => {
       const moduleFileName = this._generateFileNameForModule(answer.moduleName);
       const moduleName = answer.moduleName.replace(/-/g, '');
