@@ -1,7 +1,6 @@
-# my_angular2/4_generator
+# 5minds_angular_generator
 
-This angular2/4 generator automatically generates modules for your angular2 or angular4 project.
-You don´t have to create all the files and folders manually. 
+This angular generator automatically generates modules for your angular2 or angular4 project.
 
 # Installation 
 Follow these instructions to install the generator:
@@ -31,7 +30,7 @@ Now clone the project with:
 ```sh
 $ git clone git@github.com:Vyperus/5minds_angular2_generator.git
 ```
-After creating a develop branch type in:
+Change to the Repository in your terminal, now type:
 
 ```sh
 $ npm link
@@ -42,7 +41,7 @@ For more information got to: https://docs.npmjs.com/cli/link
 
 Get the name of the generator type: 
 ```sh
-$ yo –help
+$ yo –-help
 ```
 
 It will look like this: 
@@ -87,22 +86,22 @@ Available Generators:
 In this example, the name you have to copy is „5minds-angular2”.
 Now tell yeoman that you want to create a new module:
 ```sh
-$ yo (name of the Generator) module
+$ yo 5minds-angular2 module
 ```
-Know you should see the instruction: 
+Now you should see the instruction: 
 
-**Type Modulname in Camelcase**
+**Type Modulname in Pascalcase**
 
 Type in the Name for your module (e.g. "test"). The generator will create the following 
 folders and files for you:
 
-create src/app/modules/test/test.component.ts
-   create src/app/modules/test/test.component.html
-   create src/app/modules/test/test.component.css
-   create src/app/modules/test/test.module.ts
-   create src/app/modules/test/test-routing.module.ts
-   create src/app/modules/test/services/test.service.ts
-   create src/app/modules/test/repositories/test.repository.ts
+create test/test.component.ts
+   create test/test.component.html
+   create test/test.component.css
+   create test/test.module.ts
+   create test/test-routing.module.ts
+   create test/services/test.service.ts
+   create test/repositories/test.repository.ts
 
 
 
