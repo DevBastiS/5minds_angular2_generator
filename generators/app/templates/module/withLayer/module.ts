@@ -23,4 +23,4 @@ import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
   ],
 })
 
-export class <%=moduleName%>Module { }
+export class <%=moduleName%>Module {}

@@ -128,19 +128,6 @@ module.exports = class extends Generator {
     this.log('WARNING! Didnt Update App Module');
   }
 
-  _generateFileNameForModule(answer) {
-    for(let i = 0; i < answer.length - 1; i++) {
-      if(answer[i+1] == answer[i+1].toUpperCase()) {
-        if(i != 0){
-          answer = answer.substring(0, i+1) + answer[i+1].toLowerCase() + answer.substring(i+2, answer.length);
-          answer = answer.substring(0, i+1) + '-' + answer.substring(i+1, answer.length);
-        }
-      }
-    }
-    answer = answer.toLowerCase();
-    return answer;
-  }
-
   _createServices(moduleName, moduleFileName, moduleCompName) {
     this.fs.copyTpl(
       this.templatePath('module/service.default.ts'),
@@ -215,5 +202,20 @@ module.exports = class extends Generator {
     );
     this.log('WARNING! Generating it does not replace checking it!')
   }
+
+  _generateFileNameForModule(answer) {
+    for(let i = 0; i < answer.length - 1; i++) {
+      if(answer[i+1] == answer[i+1].toUpperCase()) {
+        if(i != 0){
+          answer = answer.substring(0, i+1) + answer[i+1].toLowerCase() + answer.substring(i+2, answer.length);
+          answer = answer.substring(0, i+1) + '-' + answer.substring(i+1, answer.length);
+        }
+      }
+    }
+    answer = answer.toLowerCase();
+    return answer;
+  }
 };
+
+
 
