@@ -95,19 +95,18 @@ Now you should see the instruction:
 Type in the Name for your module (e.g. "test"). The generator will create the following 
 folders and files for you:
 
+```sh
 --test.component.ts
 --test.component.html
 --test.component.css
 --test.module.ts
 --test-routing.module.ts
 --services
-----test.service.ts
 ----test.service.default.ts
 ----test.service.interface.ts
 --repositories
-----test.repository.ts
 ----test.repository.mock.ts
 ----test.repository.interface.ts
-
+```
 
 
