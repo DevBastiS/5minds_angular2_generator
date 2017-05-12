@@ -95,13 +95,15 @@ Now you should see the instruction:
 Type in the Name for your module (e.g. "test"). The generator will create the following 
 folders and files for you:
 
-create test/test.component.ts
-   create test/test.component.html
-   create test/test.component.css
-   create test/test.module.ts
-   create test/test-routing.module.ts
-   create test/services/test.service.ts
-   create test/repositories/test.repository.ts
+--test.component.ts
+--test.component.html
+--test.component.css
+--test.module.ts
+--test-routing.module.ts
+--services
+----test.service.ts
+--repositories
+----test.repository.ts
 
 
 
