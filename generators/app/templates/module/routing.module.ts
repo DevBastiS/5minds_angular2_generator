@@ -4,7 +4,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
 
 const routes: Routes = [
-  {path: '<%=moduleName%>', component: <%=moduleName%>Component},
+  {path: '', component: <%=moduleName%>Component}, //enter path here
 ];
 
 @NgModule({
