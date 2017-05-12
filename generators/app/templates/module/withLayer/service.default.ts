@@ -1,6 +1,6 @@
 import {Inject, Injectable} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
-import {I<%=moduleName%>Repository} from './../repositories/<%=moduleFileName%>.repository.interface';
+import {I<%=moduleName%>Repository} from './../repositories';
 import {I<%=moduleName%>Service} from './<%=moduleFileName%>.service.interface';
 
 @Injectable()

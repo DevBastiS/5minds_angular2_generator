@@ -5,12 +5,12 @@ This angular generator automatically generates modules for your angular2 or angu
 # Installation 
 Follow these instructions to install the generator:
 
-Open your terminal and install yeoman (a tool to create a generator) 
+Open your terminal and install yeoman (a tool to create a generator). 
 ```sh
 $ npm install yo –g
 ```
 
-For more information about yeoman to http://yeoman.io/.
+For more information about yeoman go to http://yeoman.io/.
 
 After the installation of yeoman you receive the following...
 ```sh
@@ -112,12 +112,15 @@ folders and files for you:
 --test.component.css
 --test.module.ts
 --test-routing.module.ts
+--index.ts
 --services
+----index.ts
 ----test.service.default.ts
 ----test.service.interface.ts
 --repositories
 ----test.repository.mock.ts
 ----test.repository.interface.ts
+----index.ts
 ```
 <<<<<<< HEAD
 =======

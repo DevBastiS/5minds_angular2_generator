@@ -141,6 +141,11 @@ module.exports = class extends Generator {
       this.destinationPath(`${moduleFileName}/services/${moduleFileName}.service.interface.ts`),
       {moduleName: moduleName, moduleFileName: moduleFileName, moduleCompName: moduleCompName}
     );
+    this.fs.copyTpl(
+      this.templatePath('module/withLayer/service.index.ts'),
+      this.destinationPath(`${moduleFileName}/services/index.ts`),
+      {moduleFileName: moduleFileName}
+    );
   }
 
   _createRepository(moduleName, moduleFileName, moduleCompName) {
@@ -153,6 +158,11 @@ module.exports = class extends Generator {
       this.templatePath('module/repository.interface.ts'),
       this.destinationPath(`${moduleFileName}/repositories/${moduleFileName}.repository.interface.ts`),
       {moduleName: moduleName, moduleFileName: moduleFileName}
+    );
+    this.fs.copyTpl(
+      this.templatePath('module/withLayer/repository.index.ts'),
+      this.destinationPath(`${moduleFileName}/repositories/index.ts`),
+      {moduleFileName: moduleFileName}
     );
   }
 
@@ -193,6 +203,11 @@ module.exports = class extends Generator {
       {moduleName: moduleName, moduleFileName: moduleFileName, moduleCompName: moduleCompName}
     );
     this.fs.copyTpl(
+      this.templatePath('module/withLayer/service.index.ts'),
+      this.destinationPath(`${moduleFileName}/services/index.ts`),
+      {moduleFileName: moduleFileName}
+    );
+    this.fs.copyTpl(
       this.templatePath('module/repository.mock.ts'),
       this.destinationPath(`${moduleFileName}/repositories/${moduleFileName}.repository.mock.ts`),
       {moduleName: moduleName, moduleFileName: moduleFileName}
@@ -201,6 +216,11 @@ module.exports = class extends Generator {
       this.templatePath('module/repository.interface.ts'),
       this.destinationPath(`${moduleFileName}/repositories/${moduleFileName}.repository.interface.ts`),
       {moduleName: moduleName, moduleFileName: moduleFileName}
+    );
+    this.fs.copyTpl(
+      this.templatePath('module/withLayer/repository.index.ts'),
+      this.destinationPath(`${moduleFileName}/repositories/index.ts`),
+      {moduleFileName: moduleFileName}
     );
     this.log('WARNING! Generating it does not replace checking it!')
   }

@@ -1,5 +1,5 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import {I<%=moduleName%>Service} from './services/<%=moduleFileName%>.service.interface';
+import {I<%=moduleName%>Service} from './services';
 
 @Component({
   selector: 'app-<%=moduleFileName%>',
