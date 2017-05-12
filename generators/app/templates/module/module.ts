@@ -15,7 +15,7 @@ import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
   ],
   exports: [
     <%=moduleName%>Component,
-  ]
+  ],
   providers: [
     {
       provide: 'I<%=moduleName%>Repository',
