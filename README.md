@@ -90,7 +90,7 @@ $ yo 5minds-angular2 module
 ```
 Now you should see the instruction: 
 
-** ? Type Modulname in Pascalcase** 
+**? Type Modulname in Pascalcase** 
 
 Type in the Name for your module (e.g. "test").
 
