@@ -1,10 +1,8 @@
 import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
-
 import {<%=moduleName%>RoutingModule} from './<%=moduleFileName%>-routing.module';
-
-import {<%=moduleName%>Repository} from './repositories/<%=moduleFileName%>.repository';
-import {<%=moduleName%>Service} from './services/<%=moduleFileName%>.service';
+import {<%=moduleName%>MockRepository} from './repositories/<%=moduleFileName%>.repository.mock';
+import {<%=moduleName%>DefaultService} from './services/<%=moduleFileName%>.service.default';
 import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
 
 @NgModule({
@@ -16,8 +14,14 @@ import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
     <%=moduleName%>Component,
   ],
   providers: [
-    <%=moduleName%>Service,
-    <%=moduleName%>Repository,
+    {
+      provide: 'I<%=moduleName%>Repository',
+      useClass: <%=moduleName%>MockRepository,
+    },
+    {
+      provide: 'I<%=moduleName%>Service',
+      useClass: <%=moduleName%>DefaultService,
+    },
   ],
 })
 
