@@ -1,3 +1,5 @@
+import 'rxjs/add/observable/of';
+
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import {I<%=moduleName%>Repository} from './<%=moduleFileName%>.repository.interface';
@@ -6,6 +8,8 @@ import {I<%=moduleName%>Repository} from './<%=moduleFileName%>.repository.inter
 @Injectable()
 export class <%=moduleName%>MockRepository implements I<%=moduleName%>Repository {
 
-  constructor() {}
-  
+  public get<%=moduleName%>(): Observable<string> {
+    return Observable.of('<%=moduleName%> works!');
+  }
+
 }
