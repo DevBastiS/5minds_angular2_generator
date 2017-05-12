@@ -45,6 +45,40 @@ module.exports = class extends Generator {
     return answer;
   }
 
+  _createServices(moduleName, moduleFileName, moduleCompName) {
+    this.fs.copyTpl(
+      this.templatePath('module/service.default.ts'),
+      this.destinationPath(`${moduleFileName}/services/${moduleFileName}.service.default.ts`),
+      {moduleName: moduleName, moduleFileName: moduleFileName, moduleCompName: moduleCompName}
+    );
+    this.fs.copyTpl(
+      this.templatePath('module/service.interface.ts'),
+      this.destinationPath(`${moduleFileName}/services/${moduleFileName}.service.interface.ts`),
+      {moduleName: moduleName, moduleFileName: moduleFileName, moduleCompName: moduleCompName}
+    );
+  }
+
+  _createRepository(moduleName, moduleFileName, moduleCompName) {
+    this.fs.copyTpl(
+      this.templatePath('module/repository.mock.ts'),
+      this.destinationPath(`${moduleFileName}/repositories/${moduleFileName}.repository.mock.ts`),
+      {moduleName: moduleName, moduleFileName: moduleFileName}
+    );
+    this.fs.copyTpl(
+      this.templatePath('module/repository.interface.ts'),
+      this.destinationPath(`${moduleFileName}/repositories/${moduleFileName}.repository.interface.ts`),
+      {moduleName: moduleName, moduleFileName: moduleFileName}
+    );
+  }
+
+  _createRouting(moduleName, moduleFileName, moduleCompName) {
+    this.fs.copyTpl(
+      this.templatePath('module/routing.module.ts'),
+      this.destinationPath(`${moduleFileName}/${moduleFileName}-routing.module.ts`),
+      {moduleName: moduleName, moduleFileName: moduleFileName}
+    );
+  }
+
   _createModule(moduleName, moduleFileName) {
     const moduleCompName = moduleName[0].toLowerCase() + moduleName.substring(1);
     this.fs.copyTpl(
