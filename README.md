@@ -122,9 +122,3 @@ folders and files for you:
 ----test.repository.interface.ts
 ----index.ts
 ```
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> release/1.1.0
