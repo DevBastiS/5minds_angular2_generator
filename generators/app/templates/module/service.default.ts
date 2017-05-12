@@ -12,4 +12,8 @@ export class <%=moduleName%>DefaultService implements I<%=moduleName%>Service {
     this.<%=moduleCompName%>Repository = <%=moduleCompName%>Repository;
   }
 
+  public get<%=moduleName%>(): Observable<string> {
+    return this.<%=moduleCompName%>Repository.get<%=moduleName%>();
+  }
+
 }

@@ -10,12 +10,16 @@ import {I<%=moduleName%>Service} from './services/<%=moduleFileName%>.service.in
 export class <%=moduleName%>Component implements OnInit {
 
   private <%=moduleCompName%>Service: I<%=moduleName%>Service;
+  private <%=moduleCompName%>: string;
 
   constructor(@Inject('I<%=moduleName%>Service') <%=moduleCompName%>Service: I<%=moduleName%>Service) {
     this.<%=moduleCompName%>Service = <%=moduleCompName%>Service;
   }
 
   public ngOnInit(): void {
-    
+    this.<%=moduleCompName%>Service.get<%=moduleName%>()
+      .subscribe((<%=moduleCompName%>: string) => {
+        this.<%=moduleCompName%> = <%=moduleCompName%>;
+      });
   }
 }
