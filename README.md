@@ -122,6 +122,3 @@ folders and files for you:
 ----test.repository.interface.ts
 ----index.ts
 ```
-
-
-
