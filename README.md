@@ -112,12 +112,15 @@ folders and files for you:
 --test.component.css
 --test.module.ts
 --test-routing.module.ts
+--index.ts
 --services
+----index.ts
 ----test.service.default.ts
 ----test.service.interface.ts
 --repositories
 ----test.repository.mock.ts
 ----test.repository.interface.ts
+----index.ts
 ```
 
 
