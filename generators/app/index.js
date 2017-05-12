@@ -49,6 +49,8 @@ module.exports = class extends Generator {
         this._createModuleWithLayer(moduleName, moduleFileName, moduleCompName);
       }
 
+      this._createDefaultFiles(moduleName, moduleFileName, moduleCompName);
+
     });
   }
 
@@ -215,6 +217,19 @@ module.exports = class extends Generator {
     answer = answer.toLowerCase();
     return answer;
   }
+
+  _createDefaultFiles(moduleName, moduleFileName, moduleCompName) {
+    this._generateModuleIndexFile(moduleFileName);
+  }
+
+  _generateModuleIndexFile(moduleFileName) {
+    this.fs.copyTpl(
+      this.templatePath('module/index.ts'),
+      this.destinationPath(`${moduleFileName}/index.ts`),
+      {moduleFileName: moduleFileName}
+    );
+  }
+
 };
 
 
