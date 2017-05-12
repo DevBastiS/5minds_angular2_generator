@@ -105,7 +105,7 @@ module.exports = class extends Generator {
     );
   }
 
-  _createBasicModule(module, moduleFileName, moduleCompName) {
+  _createBasicModule(moduleName, moduleFileName, moduleCompName) {
     this.fs.copyTpl(
       this.templatePath('module/basic/component.ts'),
       this.destinationPath(`${moduleFileName}/${moduleFileName}.component.ts`),
