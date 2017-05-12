@@ -1,4 +1,4 @@
-import {Component, OnInit, Inject} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {I<%=moduleName%>Service} from './services/<%=moduleFileName%>.service.interface';
 
 @Component({
