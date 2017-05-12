@@ -9,7 +9,7 @@ import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
   declarations: [
     <%=moduleName%>Component,
   ],
-    exports: [
+  exports: [
     <%=moduleName%>Component,
   ],
 })
