@@ -1,6 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-
-import {<%=moduleName%>Service} from './services/<%=moduleFileName%>.service';
+import {Component, Inject, OnInit} from '@angular/core';
+import {I<%=moduleName%>Service} from './services/<%=moduleFileName%>.service.interface';
 
 @Component({
   selector: '<%=moduleFileName%>',
@@ -10,7 +9,11 @@ import {<%=moduleName%>Service} from './services/<%=moduleFileName%>.service';
 
 export class <%=moduleName%>Component implements OnInit {
 
-  constructor(private <%=moduleCompName%>Service: <%=moduleName%>Service) { }
+  private <%=moduleCompName%>Service: I<%=moduleName%>Service;
+
+  constructor(@Inject('I<%=moduleName%>Service') <%=moduleCompName%>Service: I<%=moduleName%>Service) {
+    this.<%=moduleCompName%>Service = <%=moduleCompName%>Service;
+  }
 
   public ngOnInit(): void {
     
