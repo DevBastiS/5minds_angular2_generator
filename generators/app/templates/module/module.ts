@@ -13,6 +13,9 @@ import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
   declarations: [
     <%=moduleName%>Component,
   ],
+  exports: [
+    <%=moduleName%>Component,
+  ]
   providers: [
     {
       provide: 'I<%=moduleName%>Repository',
@@ -25,4 +28,4 @@ import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
   ],
 })
 
-export class <%=moduleName%>Module { }
+export class <%=moduleName%>Module {}
