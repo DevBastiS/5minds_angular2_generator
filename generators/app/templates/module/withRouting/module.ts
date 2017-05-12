@@ -8,6 +8,9 @@ import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
     CommonModule,
     <%=moduleName%>RoutingModule,
   ],
+    exports: [
+    <%=moduleName%>Component,
+  ],
   declarations: [
     <%=moduleName%>Component,
   ],

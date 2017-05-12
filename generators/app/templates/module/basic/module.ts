@@ -9,6 +9,9 @@ import {<%=moduleName%>Component} from './<%=moduleFileName%>.component';
   declarations: [
     <%=moduleName%>Component,
   ],
+    exports: [
+    <%=moduleName%>Component,
+  ],
 })
 
 export class <%=moduleName%>Module {}
