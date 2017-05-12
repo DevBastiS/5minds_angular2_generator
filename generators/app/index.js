@@ -63,7 +63,7 @@ module.exports = class extends Generator {
     this.fs.copyTpl(
       this.templatePath('module/withLayer/component.html'),
       this.destinationPath(`${moduleFileName}/${moduleFileName}.component.html`),
-      {moduleName: moduleName}
+      {moduleName: moduleName, moduleCompName: moduleCompName}
     );
     this.fs.copyTpl(
       this.templatePath('module/withLayer/component.css'),
