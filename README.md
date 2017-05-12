@@ -30,7 +30,7 @@ Now clone the project with:
 ```sh
 $ git clone git@github.com:Vyperus/5minds_angular2_generator.git
 ```
-Change to the Repository in your terminal, now type:
+Change to the generator folder in your terminal, now type:
 
 ```sh
 $ npm link
@@ -102,8 +102,12 @@ folders and files for you:
 --test-routing.module.ts
 --services
 ----test.service.ts
+----test.service.default.ts
+----test.service.interface.ts
 --repositories
 ----test.repository.ts
+----test.repository.mock.ts
+----test.repository.interface.ts
 
 
 
